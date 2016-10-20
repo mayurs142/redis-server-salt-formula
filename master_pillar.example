@@ -1,0 +1,8 @@
+## Override values from defaults
+redis:
+  version:      3:3.0.7-1chl1~xenial1
+sentinel:
+  master_name:  redis
+  master_ip:    192.168.10.10
+  master_port:  6379
+  quorum:       2

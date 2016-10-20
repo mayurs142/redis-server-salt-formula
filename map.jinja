@@ -1,0 +1,5 @@
+{% import_yaml "redis-server/defaults.yaml" as defaults %}
+
+{% set redis = salt['pillar.get']('redis', default=defaults.redis, merge=True) %}
+
+{% set sentinel = salt['pillar.get']('sentinel', default=defaults.sentinel, merge=True) %}
